@@ -1,13 +1,17 @@
 [tool.poetry]
 name = "web-api-django"
-version = "0.1.0"
+version = "0.2.0"
 description = "a github repo template for creating a web api using django"
 authors = ["Khai Nguyen <1192669+khaister@users.noreply.github.com>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
 django = "^5.0.3"
+djangorestframework = "^3.15.1"
+httpx = "^0.27.0"
+black = "^24.3.0"
 
 
 [build-system]
