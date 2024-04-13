@@ -12,11 +12,7 @@ def get_shows():
             synopsis=futurama.synopsis,
             year_start=years_aired[0],
             year_stop=years_aired[1],
-            creators=(
-                [Person(**creator.dict()) for creator in futurama.creators]
-                if futurama.creators
-                else None
-            ),
+            creators=([Person(**creator.dict()) for creator in futurama.creators] if futurama.creators else None),
         )
         shows.append(show)
 
