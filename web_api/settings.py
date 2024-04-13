@@ -132,12 +132,12 @@ LOGGING = {
     "disable_existing_loggers": False,
     "handlers": {
         "console": {
-            "class": "logging.StreamHandler",
+            "class": "common_libs.logging.ColorHandler",
         },
     },
     "root": {
         "handlers": ["console"],
-        "level": "INFO",
+        "level": "DEBUG",
     },
     "loggers": {
         "django": {
