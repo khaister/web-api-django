@@ -32,7 +32,9 @@ class ColorHandler(logging.StreamHandler):
 
         try:
             msg = self.format(record)
-            self.stream.write(f"{csi}{color}m{LEVEL_EMOJI_MAP.get(record.levelno, "")} {msg}{csi}m{self.terminator}")
+            self.stream.write(f"{csi}{color}m{LEVEL_EMOJI_MAP.get(record.levelno, "  ")} {msg}{csi}m{self.terminator}")
             self.flush()
+        except RecursionError:
+            raise
         except Exception:
             self.handleError(record)

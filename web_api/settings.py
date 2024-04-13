@@ -130,9 +130,14 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
+    "formatters": {"rich": {"datefmt": "[%X]"}},  # noqa
     "handlers": {
         "console": {
-            "class": "common_libs.logging.ColorHandler",
+            "class": "rich.logging.RichHandler",
+            "formatter": "rich",
+            "rich_tracebacks": True,
+            "tracebacks_show_locals": True,
+            "level": "DEBUG",
         },
     },
     "root": {
