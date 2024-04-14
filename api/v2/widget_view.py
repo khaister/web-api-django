@@ -2,7 +2,7 @@ from adrf.viewsets import ViewSet
 from asgiref.sync import sync_to_async
 from rest_framework.response import Response
 
-from api.auth import AsyncAuthentication
+from api.auth import AsyncBasicAuthentication
 from api.v1.widget_view import WidgetSerializer
 from core.models import Widget
 
@@ -12,7 +12,7 @@ class WidgetViewSet(ViewSet):
     API endpoint that allows users to be viewed or edited.
     """
 
-    authentication_classes = [AsyncAuthentication]
+    authentication_classes = [AsyncBasicAuthentication]
 
     @sync_to_async
     def list(self, request):
