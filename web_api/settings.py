@@ -30,7 +30,6 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -38,8 +37,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "rest_framework",
     "django_extensions",
+    "rest_framework",
+    "uvicorn",
+    "adrf",
     "core",
 ]
 
@@ -72,6 +73,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "web_api.wsgi.application"
+ASGI_APPLICATION = "web_api.asgi.application"
 
 
 # Database
