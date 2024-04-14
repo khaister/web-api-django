@@ -20,7 +20,6 @@ uvicorn = "^0.29.0"
 
 [tool.black]
 line-length = 120
-exclude = "/common_libs/logging.py"
 
 [build-system]
 requires = ["poetry-core"]
