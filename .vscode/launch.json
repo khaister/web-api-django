@@ -18,10 +18,10 @@
       "name": "localhost (django:wsgi)",
       "type": "debugpy",
       "request": "launch",
+      "program": "${workspaceFolder}/manage.py",
       "args": ["runserver"],
       "django": true,
       "autoStartBrowser": false,
-      "program": "${workspaceFolder}/manage.py",
       "env": {
         "ENVIRONMENT": "local"
       }
