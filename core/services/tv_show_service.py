@@ -17,3 +17,20 @@ def get_shows():
         shows.append(show)
 
     return TvShows(shows=shows)
+
+
+async def get_shows_async():
+    shows = []
+    futurama = await FuturamaClient().get_show_info_async()
+    if futurama:
+        years_aired = futurama.years_aired.split("–")
+        show = TvShow(
+            id=futurama.id,
+            synopsis=futurama.synopsis,
+            year_start=years_aired[0],
+            year_stop=years_aired[1],
+            creators=([Person(**creator.dict()) for creator in futurama.creators] if futurama.creators else None),
+        )
+        shows.append(show)
+
+    return TvShows(shows=shows)
