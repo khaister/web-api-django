@@ -11,4 +11,4 @@ class TvShowViewSet(viewsets.ViewSet):
 
     def list(self, request):
         shows = tv_show_service.get_shows()
-        return Response(shows.dict())
+        return Response(shows.model_dump())

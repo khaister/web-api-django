@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="localhost" type="PythonConfigurationType" factoryName="Python">
+  <configuration default="false" name="localhost (asgi)" type="PythonConfigurationType" factoryName="Python">
     <module name="web-api-django" />
     <option name="ENV_FILES" value="" />
     <option name="INTERPRETER_OPTIONS" value="" />
@@ -19,11 +19,11 @@
       <option name="region" />
       <option name="useCurrentConnection" value="false" />
     </EXTENSION>
-    <option name="SCRIPT_NAME" value="manage.py" />
-    <option name="PARAMETERS" value="runserver" />
+    <option name="SCRIPT_NAME" value="web_api.asgi" />
+    <option name="PARAMETERS" value="" />
     <option name="SHOW_COMMAND_LINE" value="false" />
     <option name="EMULATE_TERMINAL" value="true" />
-    <option name="MODULE_MODE" value="false" />
+    <option name="MODULE_MODE" value="true" />
     <option name="REDIRECT_INPUT" value="false" />
     <option name="INPUT_FILE" value="" />
     <method v="2" />

@@ -1,5 +1,8 @@
-serve:
+wsgi:
 	poetry run python manage.py runserver
+
+asgi:
+	poetry run python -m web_api.asgi
 
 migrations:
 	poetry run python manage.py makemigrations

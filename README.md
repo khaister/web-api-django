@@ -31,7 +31,11 @@ At project root, perform the following.
        or
    $ make local
    ```
-6. Run the server
+6. Run the WSGI server...
     ```console
-    $ ENVIRONMENT=local make serve
+    $ ENVIRONMENT=local make wsgi
+    ```
+7. Or run the ASGI server
+    ```console
+    $ ENVIRONMENT=local make asgi
     ```
