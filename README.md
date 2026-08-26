@@ -1,4 +1,4 @@
-# Web API Template
+# Web API Django Template
 
 A template repository for creating a web API using Django and Django REST framework.
 
